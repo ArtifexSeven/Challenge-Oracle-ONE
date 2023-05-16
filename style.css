@@ -42,16 +42,15 @@ main{
 }
 
 .anotacion{
-    display: inline-block;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
     margin: 700px auto 155px 240px;
     vertical-align: middle;
 }
 
 .nota{
-    width: 10px;
-    padding-top: 13px;
-    position: fixed;
+    width: 10px;   
     opacity: 0.8;
 }
 
@@ -62,6 +61,76 @@ main{
     opacity: 0.8;
     font-size: 12px;
     line-height: 150%;
-    padding-left: 20px;
-    
+    padding-left: 10px;   
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    margin: 740px 520px 72px 240px;
+    text-transform: none;
+
+}
+
+.botEncriptar{
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    display: flex;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botEncriptar:hover{
+    background-color: #083163;
+    transform: scale(1.03);
+}
+
+.botEncriptar:active{
+    background-color: #0A3871;    
+}
+
+.botDesencriptar{
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    display: flex;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botDesencriptar:hover{
+    background-color: #d2dbe9;
+    transform: scale(1.03);
+}
+
+.botDesencriptar:active{
+    background-color: #D8DFE8;
 }
