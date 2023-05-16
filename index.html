@@ -10,22 +10,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <main>
-        <img src="imagenes/logoalura.png" class="logoalura">
+        <img src="imagenes/logoalura.png" class="logoalura" alt="Logo de alura">
         <section>
             <textarea cols="30" rows="30" id="textoaqui" class="input" required placeholder="Ingrese su texto aqui."></textarea>
         </section>
         <section class="anotacion">
         <div class="nota">
-            <img src="imagenes/nota.png">            
+            <img src="imagenes/nota.png" alt="Signo de exclamación">            
         </div>
         <div class="minusculas">
             <p> Solo letras minusculas y sin acentos</p>
         </div>
         </section>
+        <section>
         <div class="botones">
             <button class="botEncriptar">Encriptar</button>
             <button class="botDesencriptar">Desencriptar</button>
         </div>
-        
+
+        </section>
+        <seccion class="resultado">
+            <img src="imagenes/personaje.png" class="personaje" alt="Persona observando un diamante con una lupa">
+            <p class="ningunMensaje">Ningún mensaje fue encontrado.</p>
+            <p class="ingreseTexto">Ingrese el texto que desea encriptar o desenciptar.</p>
+            <p class="textoResultado"></p>
+        </seccion>       
     </main>
+    <footer class="desarrollador"> 
+        <p><br>&copy Juan Sinuhé Vázquez Merlos</p>
+        <p>2023 Alura Latam/Oracle ONE</p>
+    </footer>
+    <script src="main.js"></script>
 </html>

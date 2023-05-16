@@ -1,13 +1,13 @@
 main{
     display: flex;
-    height: 1024px;
-    width: 1440px;
+    height: 850px;
+    width: 1400px;
     background:whitesmoke;
 }
 
 .logoalura{
     position: absolute;
-    margin: 40px auto auto 84px;
+    margin: 90px auto auto 180px;
       
 }
 
@@ -18,7 +18,7 @@ main{
     position: absolute;
     width: 577px;
     height: 500px;
-    left: 240px;
+    left: 400px;
     top: 168px;
     border: none;
     font-family: 'Inter';
@@ -45,7 +45,7 @@ main{
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: 700px auto 155px 240px;
+    margin: 700px auto 155px 400px;
     vertical-align: middle;
 }
 
@@ -70,10 +70,10 @@ main{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    position: absolute;
+    position: relative;
     width: 680px;
     height: 67px;
-    margin: 740px 520px 72px 240px;
+    margin: 740px 520px 72px 400px;
     text-transform: none;
 
 }
@@ -133,4 +133,76 @@ main{
 
 .botDesencriptar:active{
     background-color: #D8DFE8;
+}
+
+.resultado{
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    left: 1300px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    align-content: center;
+}
+
+.personaje{
+    position: relative;
+    margin: 180px auto 30px auto;
+}
+
+.ningunMensaje{
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.ingreseTexto{
+    margin-top: 10px;
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    }
+
+.desarrollador{
+    height: 10%;
+    width: 100%;
+    background-color: #052144;
+    color: white;
+}
+
+.desarrollador p{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
 }
