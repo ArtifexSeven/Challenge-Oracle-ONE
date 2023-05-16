@@ -1,5 +1,67 @@
+main{
+    display: flex;
+    height: 1024px;
+    width: 1440px;
+    background:whitesmoke;
+}
+
 .logoalura{
     position: absolute;
     margin: 40px auto auto 84px;
       
+}
+
+#textoaqui{
+    background-color: white;
+    color: #0A3871;
+    text-transform: lowercase;
+    position: absolute;
+    width: 577px;
+    height: 500px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    display: inline-block;
+    
+}
+
+#textoaqui:focus{
+    outline:none;
+}
+
+::placeholder{
+    color: #0A3871;
+    font-family: 'Inter';
+    text-transform: none;
+    
+}
+
+.anotacion{
+    display: inline-block;
+    position: relative;
+    margin: 700px auto 155px 240px;
+    vertical-align: middle;
+}
+
+.nota{
+    width: 10px;
+    padding-top: 13px;
+    position: fixed;
+    opacity: 0.8;
+}
+
+.minusculas{
+    font-style: normal;
+    font-family: 'Inter';
+    color: #495057;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 150%;
+    padding-left: 20px;
+    
 }
