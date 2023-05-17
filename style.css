@@ -16,15 +16,15 @@ main{
     color: #0A3871;
     text-transform: lowercase;
     position: absolute;
-    width: 577px;
+    width: 570px;
     height: 500px;
     left: 400px;
     top: 168px;
     border: none;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 26px;
     line-height: 150%;
     display: inline-block;
     
@@ -34,7 +34,7 @@ main{
     outline:none;
 }
 
-::placeholder{
+.input::placeholder{
     color: #0A3871;
     font-family: 'Inter';
     text-transform: none;
@@ -73,7 +73,7 @@ main{
     position: relative;
     width: 680px;
     height: 67px;
-    margin: 740px 520px 72px 400px;
+    margin: 740px 130px 72px 400px;
     text-transform: none;
 
 }
@@ -135,46 +135,78 @@ main{
     background-color: #D8DFE8;
 }
 
-.resultado{
-    position: absolute;
-    width: 400px;
-    height: 700px;
-    left: 1300px;
-    top: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    align-content: center;
-}
-
-.personaje{
-    position: relative;
-    margin: 180px auto 30px auto;
-}
-
-.ningunMensaje{
-    width: 336px;
-    height: 58px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
-}
-
-.ingreseTexto{
-    margin-top: 10px;
-    width: 336px;
-    height: 48px;
+.copiar{
+    justify-content: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 17px;
+    line-height: 19px;
+    color: white;
+    display: flex;
+    position: relative;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
     text-align: center;
-    }
+    top: 200px;
+    left: 30px;
+}
+
+.copiar:hover{
+    background-color: #FF5733;
+    transform: scale(1.03);
+    border: none;
+}
+
+.copiar:active{
+    background-color: #F67256; 
+    border: none;   
+}
+
+.textEncriptado{
+    background: white;  
+    background-repeat:no-repeat;
+    border: none;
+    border-radius: 15px;
+    color: #0A3871;
+    padding: 0px;
+    position: relative;
+    width: 390px;
+    height: 500px;
+    left: 0px;
+    top: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.textEncriptado:focus{
+    outline: none;
+}
+
+.textEncriptado:placeholder-shown{
+    background-image: url("imagenes/personaje.png");
+    background-position: center;
+}
+
+.textEncriptado::placeholder{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    text-align:center;
+    color: #343A40;
+    vertical-align: bottom;
+    top: 410px;
+}
 
 .desarrollador{
     height: 10%;
