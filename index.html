@@ -1,44 +1,46 @@
 <meta charset="UTF-8">
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
-        <meta name="viewport" content="width=device-width">
         <title>Challenge Oracle ONE - Juan Sinuhé Vázquez Merlos</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
     </head>
-    <main>
+    <header>
         <img src="imagenes/logoalura.png" class="logoalura" alt="Logo de alura">
-        <section>
-            <textarea class="input" cols="30" rows="30" id="textoaqui" required placeholder="Ingrese su texto aqui."></textarea>
-        </section>
-        <section class="anotacion">
-        <div class="nota">
+    </header>
+    <main>  
+        <section class="primerasec">
+            <textarea class="textoaqui" cols="30" rows="30" required placeholder="Ingrese su texto aqui."></textarea>
+        <div class="anotacion">
             <img src="imagenes/nota.png" alt="Signo de exclamación">            
         </div>
         <div class="minusculas">
             <p> Solo letras minusculas y sin acentos</p>
         </div>
-        </section>
-        <section>
         <div class="botones">
             <button class="botEncriptar">Encriptar</button>
             <button class="botDesencriptar">Desencriptar</button>
         </div>
-
         </section>
         <seccion class="resultado">
             <textarea class="textEncriptado" cols="20" rows="10" placeholder=" Ningun mensaje fue encontrado."></textarea>
             <div>
-                <button class="copiar">Copiar</button>
+                <button class="botCopiar">Copiar</button>
             </div>
         </seccion>       
     </main> 
     <footer class="desarrollador"> 
+        <div class="dev-texto">
         <p><br>&copy Juan Sinuhé Vázquez Merlos</p>
         <p>2023 Alura Latam/Oracle ONE</p>
+        </div>
+        <div class="logosFoot">
+            <a href="https://www.linkedin.com/in/jvazquezmer/"><img src="imagenes/linkedin.png" alt="Logo LinkedIn" class="logoLink"></a>
+            <a href="https://github.com/ArtifexSeven"><img src="imagenes/github.png" alt="Logo Github" class="logoGit"></a>
+        </div>
     </footer>
     <script src="main.js"></script>
 </html>

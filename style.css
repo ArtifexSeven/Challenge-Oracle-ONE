@@ -1,25 +1,26 @@
-main{
-    display: flex;
-    height: 850px;
+html{
+    height: 930px;
     width: 1400px;
+}
+main{
+      
     background:whitesmoke;
 }
 
 .logoalura{
-    position: absolute;
-    margin: 90px auto auto 180px;
-      
+    margin-top: 60px;
+    margin-left: 250px;      
 }
 
-#textoaqui{
+.textoaqui{
     background-color: white;
     color: #0A3871;
     text-transform: lowercase;
     position: absolute;
-    width: 570px;
+    width: 680px;
     height: 500px;
-    left: 400px;
-    top: 168px;
+    left: 350px;
+    top: 120px;
     border: none;
     font-family: 'Inter';
     font-style: normal;
@@ -30,11 +31,11 @@ main{
     
 }
 
-#textoaqui:focus{
+.textoaqui:focus{
     outline:none;
 }
 
-.input::placeholder{
+.textoaqui::placeholder{
     color: #0A3871;
     font-family: 'Inter';
     text-transform: none;
@@ -45,23 +46,22 @@ main{
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: 700px auto 155px 400px;
+    top: 650px;
+    left: 360px;
     vertical-align: middle;
 }
 
-.nota{
-    width: 10px;   
-    opacity: 0.8;
-}
-
 .minusculas{
+    position: absolute;
     font-style: normal;
     font-family: 'Inter';
     color: #495057;
-    opacity: 0.8;
-    font-size: 12px;
+    opacity: 0.9;
+    font-size: 15px;
     line-height: 150%;
     padding-left: 10px;   
+    top: 648px;
+    left: 375px;
 }
 
 .botones{
@@ -70,10 +70,11 @@ main{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    position: relative;
+    position: absolute;
     width: 680px;
     height: 67px;
-    margin: 740px 130px 72px 400px;
+    top: 700px;
+    left: 350px;
     text-transform: none;
 
 }
@@ -135,7 +136,7 @@ main{
     background-color: #D8DFE8;
 }
 
-.copiar{
+.botCopiar{
     justify-content: center;
     font-family: 'Inter';
     font-style: normal;
@@ -153,17 +154,17 @@ main{
     border-radius: 24px;
     cursor: pointer;
     text-align: center;
-    top: 200px;
-    left: 30px;
+    top: 520px;
+    left: 1230px;
 }
 
-.copiar:hover{
+.botCopiar:hover{
     background-color: #FF5733;
     transform: scale(1.03);
     border: none;
 }
 
-.copiar:active{
+.botCopiar:active{
     background-color: #F67256; 
     border: none;   
 }
@@ -175,11 +176,11 @@ main{
     border-radius: 15px;
     color: #0A3871;
     padding: 0px;
-    position: relative;
+    position: absolute;
     width: 390px;
     height: 500px;
-    left: 0px;
-    top: 150px;
+    left: 1200px;
+    top: 100px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -209,32 +210,249 @@ main{
 }
 
 .desarrollador{
-    height: 10%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 110px;
     width: 100%;
     background-color: #052144;
     color: white;
+    top: 830px;
+
 }
 
-.desarrollador p{
-    margin-top: 10px;
-    text-align: center;
+.dev-texto{
+    position:absolute;
     font-family: 'Inter';
     font-style: normal;
     font-size: 20px;
     color: lightgrey;
+    font-weight: 700;
+    left: 680px;
+}
+
+.logosFoot{
+    position: relative;
+    left: 990px;
+    top: 15px;
+}
+.logosFoot img{
+    width: 48px;  
+    padding: 3px;
+}
+
+@media screen and (max-width:540px) {
+    html{
+        width: 100%;
+        height: 1100px;
+    }
+
+    section{
+        position: absolute;
+        width: 420px;
+    }
+
+    .logoalura{
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 10px;
+        /*transform: scale(70%);*/
+    }
+
+    .textoaqui{
+        position: relative;
+        top: 70px;
+        left: 10px;
+        width: 380px;
+        height: 350px;
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        
+    }
+
+    .anotacion{
+        position:absolute;
+        top: 430px;
+        left: 10px;
+       
+    }
+
+    .minusculas{
+        position: absolute;
+        top: 430px;
+        left: 17px;
+    }
+
+    .botones{
+       top: 460px;
+       left: 20px;
+       width: 350px;
+        gap: 15px;
+
+    }
+
+    .textEncriptado{
+        position: relative;
+        width: 380px;
+        height: 380px;
+        top: 560px;
+        left: 10px;
+        border: none;
+
+    }
+
+    .textEncriptado::placeholder{
+        font-size: 20px;
+        color: #343A40;
+        vertical-align: bottom;
+        top: 350px;
+        font-weight: 500;
+
+    }
+
+    .botCopiar{
+        width: 200px;
+        top: 570px;
+        left: 100px;
+
+    }
+
+    .desarrollador{
+        position:absolute;
+        top: 1050px;
+        width: 540px;
+        display: flex;
+        align-items: center;
+
+    }
+    .dev-texto{
+        font-size: 15px;
+        position: relative;
+        left: 60px;
+        top: 0px;
+
+    }
+
+    .logosFoot{
+        position: relative;
+        left: 65px;
+        top: 10px;
+    }
+    .logosFoot img{
+        width: 30px;  
+        padding: 3px;
+    }
+
+
 }
 
 
 
+@media screen and (min-width:541px) and (max-width:900px) {
+    html{
+        width: 100%;
+        height: 1100px;
+    }
 
+    section{
+        position: absolute;
+        width: 820px;
+    }
 
+    .logoalura{
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 
+    .textoaqui{
+        position: relative;
+        top: 70px;
+        left: 70px;
+        width: 500px;
+        height: 450px;
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        
+    }
 
+    .anotacion{
+        position:absolute;
+        top: 532px;
+        left: 70px;
+       
+    }
 
+    .minusculas{
+        position: absolute;
+        top: 530px;
+        left: 80px;
+    }
 
+    .botones{
+       top: 570px;
+       left: 150px;
+       width: 350px;
+        gap: 15px;
 
+    }
 
+    .textEncriptado{
+        position: relative;
+        width: 500px;
+        height: 450px;
+        top: 670px;
+        left: 70px;
+        border: none;
 
+    }
 
-@media screen and (max-width:480px) {
+    .textEncriptado::placeholder{
+        font-size: 20px;
+        color: #343A40;
+        vertical-align: bottom;
+        top: 400px;
+        font-weight: 500;
+
+    }
+
+    .botCopiar{
+        width: 200px;
+        top: 690px;
+        left: 210px;
+
+    }
+
+    .desarrollador{
+        position:absolute;
+        top: 1250px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+    .dev-texto{
+        font-size: 15px;
+        position: relative;
+        left: 150px;
+        top: 0px;
+
+    }
+
+    .logosFoot{
+        position: relative;
+        left: 160px;
+        top: 10px;
+    }
+    .logosFoot img{
+        width: 40px;  
+        padding: 3px;
+    }
+
 }
+
+
