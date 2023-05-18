@@ -22,6 +22,19 @@ function btnDesencriptar(){
     textArea.value = ""
 }
 
+    document.querySelector("#botoncopiar").addEventListener('click',()=>{
+        copyToClipBoard(mensaje);
+    })
+    
+    function copyToClipBoard(mensaje){
+        const inputOculto = document.createElement('input')
+        inputOculto.setAttribute('value', mensaje.value);
+        document.body.appendChild(inputOculto);
+        inputOculto.select();
+        document.execCommand('copy')
+        document.body.removeChild(inputOculto);  
+    }
+
 
 
 
@@ -50,5 +63,4 @@ function desencriptar(stringDesencriptada){
     }
     return stringDesencriptada
 }
-
 
